@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Examen;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
-    }
+    $data['examenes'] = Examen::all();
+    // foreach ($examenes as $examen) {
+    //     echo $examen->materia .' ' . $examen->fecha."</br>";
+    // }
+    return view('home',$data);
+
+}
+
 }

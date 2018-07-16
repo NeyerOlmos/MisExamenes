@@ -15,6 +15,12 @@
                     @endif
 
                     You are logged in!
+                    
+                    @foreach ($examenes as $examen )
+                      <div class="">
+                      {{$examen->fecha.' '.  $examen->materia}}
+                      </div>
+                    @endforeach
                 </div>
             </div>
         </div>

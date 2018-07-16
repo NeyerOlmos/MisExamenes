@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace misexamenes;
 
 use Illuminate\Database\Eloquent\Model;
 

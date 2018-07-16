@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace misexamenes\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Examen;
+use misexamenes\Examen;
 class HomeController extends Controller
 {
     /**
